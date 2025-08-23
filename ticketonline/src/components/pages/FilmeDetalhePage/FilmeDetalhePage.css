@@ -1,0 +1,142 @@
+/* FilmeDetalhePage Styles */
+.filme-detalhe-page {
+  padding: 40px 0;
+  min-height: 70vh;
+  background-color: var(--bg-secondary);
+}
+
+.filme-detalhe__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.filme-detalhe__back {
+  margin-bottom: 40px;
+}
+
+.filme-detalhe__content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.filme-detalhe__poster {
+  position: sticky;
+  top: 100px;
+}
+
+.poster-placeholder {
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(45deg, var(--bg-tertiary), var(--border-color));
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-tertiary);
+  text-align: center;
+  border: 2px dashed var(--border-color);
+  padding: 20px;
+}
+
+.poster-placeholder p {
+  margin: 0 0 8px 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.poster-placeholder small {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.filme-detalhe__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.filme-detalhe__title {
+  font-size: 42px;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.filme-detalhe__meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.meta-item {
+  font-weight: 500;
+}
+
+.meta-separator {
+  color: var(--text-tertiary);
+}
+
+.filme-detalhe__rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rating-stars {
+  font-size: 20px;
+}
+
+.rating-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.filme-detalhe__description h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin: 0 0 16px 0;
+}
+
+.filme-detalhe__description p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.filme-detalhe__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .filme-detalhe__content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .filme-detalhe__poster {
+    position: static;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .filme-detalhe__title {
+    font-size: 32px;
+  }
+  
+  .filme-detalhe__actions {
+    justify-content: center;
+  }
+}

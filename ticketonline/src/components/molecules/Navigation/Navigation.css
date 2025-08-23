@@ -1,0 +1,47 @@
+/* Navigation Component Styles */
+.navigation {
+  display: flex;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 32px;
+}
+
+.navigation__item {
+  display: flex;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navigation__link:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-light);
+}
+
+.navigation__link--active {
+  color: var(--primary-color);
+  background-color: var(--primary-light);
+}
+
+.navigation__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background-color: var(--primary-color);
+}

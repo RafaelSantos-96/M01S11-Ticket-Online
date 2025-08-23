@@ -1,0 +1,15 @@
+/* MainTemplate Styles */
+.main-template {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.main-template__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}

@@ -1,0 +1,56 @@
+/* Logo Component Styles */
+.logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo__ticket {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.logo__online {
+  color: var(--text-primary);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Sizes */
+.logo--small .logo__ticket {
+  font-size: 18px;
+}
+
+.logo--small .logo__online {
+  font-size: 12px;
+}
+
+.logo--medium .logo__ticket {
+  font-size: 24px;
+}
+
+.logo--medium .logo__online {
+  font-size: 14px;
+}
+
+.logo--large .logo__ticket {
+  font-size: 32px;
+}
+
+.logo--large .logo__online {
+  font-size: 18px;
+}
+
+.logo__image {
+  max-height: 40px;
+  width: auto;
+}

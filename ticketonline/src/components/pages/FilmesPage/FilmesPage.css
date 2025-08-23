@@ -1,0 +1,109 @@
+/* FilmesPage Styles */
+.filmes-page {
+  padding: 40px 0;
+  min-height: 70vh;
+  background-color: var(--bg-secondary);
+}
+
+.filmes-page__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.filmes-page__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.filmes-page__title {
+  font-size: 42px;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin: 0 0 16px 0;
+}
+
+.filmes-page__subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.filmes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Placeholder styles - será substituído nos próximos exercícios */
+.filme-placeholder {
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+  transition: transform 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.filme-placeholder:hover {
+  transform: translateY(-5px);
+  background: var(--card-hover-bg);
+}
+
+.filme-placeholder__image {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.placeholder-box {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, var(--bg-tertiary), var(--border-color));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-tertiary);
+  text-align: center;
+  border: 2px dashed var(--border-color);
+}
+
+.placeholder-box p {
+  margin: 0 0 8px 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.placeholder-box small {
+  font-size: 12px;
+  max-width: 200px;
+}
+
+.filme-placeholder__info {
+  padding: 20px;
+}
+
+.filme-placeholder__info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+}
+
+.filme-placeholder__info p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .filmes-page__title {
+    font-size: 32px;
+  }
+  
+  .filmes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}

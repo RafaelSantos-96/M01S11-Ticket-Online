@@ -1,0 +1,37 @@
+/* ThemeToggle Component Styles */
+.theme-toggle {
+  color: var(--text-primary) !important;
+  transition: all 0.3s ease !important;
+}
+
+.theme-toggle:hover {
+  background-color: var(--primary-light) !important;
+  transform: scale(1.1);
+}
+
+.theme-toggle__icon {
+  font-size: 24px !important;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle__icon--light {
+  color: #ffa726 !important; /* Cor amarela para o sol */
+}
+
+.theme-toggle__icon--dark {
+  color: #5c6bc0 !important; /* Cor azul para a lua */
+}
+
+/* Animação de rotação ao alternar */
+.theme-toggle.MuiIconButton-root {
+  animation: rotateIn 0.3s ease-in-out;
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(-180deg) scale(0.8);
+  }
+  to {
+    transform: rotate(0deg) scale(1);
+  }
+}

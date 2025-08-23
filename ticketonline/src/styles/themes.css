@@ -1,0 +1,63 @@
+/* Tema Claro (padrão) */
+:root {
+  /* Cores principais */
+  --primary-color: #e50914;
+  --primary-hover: #c4070f;
+  --primary-light: rgba(229, 9, 20, 0.1);
+  
+  /* Cores de fundo */
+  --bg-primary: #ffffff;
+  --bg-secondary: #fafafa;
+  --bg-tertiary: #f5f5f5;
+  
+  /* Cores de texto */
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-tertiary: #999999;
+  --text-inverse: #ffffff;
+  
+  /* Cores de borda */
+  --border-color: #e0e0e0;
+  --border-hover: #cccccc;
+  
+  /* Sombras */
+  --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --shadow-heavy: 0 8px 30px rgba(0, 0, 0, 0.12);
+  
+  /* Cards */
+  --card-bg: #ffffff;
+  --card-hover-bg: #ffffff;
+}
+
+/* Tema Escuro */
+[data-theme="dark"] {
+  /* Cores de fundo */
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --bg-tertiary: #2a2a2a;
+  
+  /* Cores de texto */
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --text-tertiary: #808080;
+  --text-inverse: #333333;
+  
+  /* Cores de borda */
+  --border-color: #404040;
+  --border-hover: #555555;
+  
+  /* Sombras */
+  --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.3);
+  --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-heavy: 0 8px 30px rgba(0, 0, 0, 0.4);
+  
+  /* Cards */
+  --card-bg: #1e1e1e;
+  --card-hover-bg: #2a2a2a;
+}
+
+/* Transições suaves para mudança de tema */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
