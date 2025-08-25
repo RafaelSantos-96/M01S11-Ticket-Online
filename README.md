@@ -22,6 +22,7 @@ Aplicação React para exibir filmes, detalhes, formulário de contato e tema da
 - Tema claro e escuro com toggle.
 
 # Link do Projeto: 
+m01-s11-ticket-online.vercel.app
 
 
 
